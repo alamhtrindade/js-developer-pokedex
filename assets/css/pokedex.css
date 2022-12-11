@@ -146,6 +146,58 @@
     border-radius: 1rem;
 }
 
+.pokemonDetailsModal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 9999999;
+    
+}
+
+.modalContent {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    margin-top: 30vh;
+    max-width: 80vw;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+}
+
+.headerModal {
+    padding: 1px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.headerModal .titleModal{
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.headerModal .closeModal {
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+.pokemonsInfo{
+    padding: 1px 8px 8px 8px;
+}
+
+.pokemonDetailsModal .modalContent .pokemonsInfo .infos {
+    font-size: .825rem;
+    color: gray;
+}
+
+.pokemonDetailsModal .modalContent .pokemonsInfo .infosPokemons{
+    font-size: .825rem;
+    color: black;
+}
+
+
+
 @media screen and (min-width: 380px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
